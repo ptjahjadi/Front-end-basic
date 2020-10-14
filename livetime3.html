@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .mybox{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+
+    </style>
+    <div id="timer"></div>
+    <div class="mybox"></div>
+
+
+    <div>
+        <button id="change"> Quick! Press this button within 3 seconds!</button>
+    </div>
+    <div id="changetext"></div>
+    <script>
+        function checkTime(){          
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            document.getElementById("timer").innerHTML = `${h}:${m}:${s}`;
+            setInterval(checkTime, 1000);
+        }
+        checkTime();
+        
+        clicked = 0;
+        // The button needs to be pressed within 3 seconds, then the box will change colour (PROMISE)!
+        // This solves the problem of livetime2
+        function waitChangeColour(){
+            setTimeout(changeColour, 500);
+        }
+
+        function changeColour(){
+        redSquare = document.querySelector(".mybox")
+        redSquare.style.backgroundColor = 'green';
+        document.querySelector('#changetext').innerHTML =  "You pressed the button!";
+        }
+
+        document.querySelector("#change").addEventListener("click", clicked3Sec);
+
+        function didNotClick(){
+            document.querySelector('#changetext').innerHTML = "You did not press the button!";
+        }
+
+        function clicked3Sec(){
+            clicked = 1;
+        }
+
+        let myPromise = new Promise(function(resolve, reject) {
+            setTimeout(function () {
+                if (clicked === 1) {
+                    resolve();
+                }
+                else {
+                    reject();
+                }
+            }, 3000);
+        });
+
+        myPromise.then((result) => waitChangeColour())
+        .catch((result) => didNotClick());
+
+    </script>
+</html>

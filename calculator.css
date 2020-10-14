@@ -1,0 +1,62 @@
+.topblack {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  color: white;
+  font-family: monospace;
+}
+
+.myrow{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.calcbuttons{
+}
+
+.smallwhite{
+  display: flex;
+  flex: 1;
+  border: 1px black solid;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: antiquewhite;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.medwhite{
+  display: flex;
+  flex: 2;
+  border: 1 px black solid;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: antiquewhite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.largewhite{
+  display: flex;
+  flex: 3;
+  border: 1 px black solid;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: antiquewhite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.smallorange{
+  color: white;
+  display: flex;
+  flex: 1;
+  border: 1px black solid;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: lightsalmon;
+  text-align: center;
+  cursor: pointer;
+}

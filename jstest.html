@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+  OI
+</head>
+
+<div class="thebutton">
+<button> Don't press this! </button>
+<button> Press this! </button>
+</div>
+<input placeholder="type into me", class="inputtocopy">
+<p class="eventhere">asdfsdf </p>
+</input>
+<div>
+  <ul>
+    <li class="change"> change it! </li>
+    <li class="change"> change it! </li>
+    <li> don't change! </li>
+    <li class="change"> change it! </li>
+</div>
+
+<script>
+  console.log("WOI")
+  const elements = document.querySelectorAll('.change');
+  for (i = 0; i < elements.length; i++) {
+    elements[i]= "It has been modified!"
+  }
+  const change = document.querySelector('.inputtocopy');
+  const thecopy = document.querySelector('.eventhere');
+
+  change.addEventListener("keyup", function () {
+    thecopy.innerText = change.value;
+  })
+  
+  const tombol = document.querySelector('.thebutton');
+  tombol.addEventListener("click", function (yok) {
+    console.log("You pressed it!");
+  })
+</script>
+</body>
+</html>

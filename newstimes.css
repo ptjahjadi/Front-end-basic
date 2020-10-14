@@ -1,0 +1,110 @@
+.invisiblebox{
+  width: 1000px;
+}
+
+.thenewstimes{
+  font-family: cursive;
+  text-align: center;
+}
+
+.bigbox{
+  display: flex;
+  border: 1px black solid;
+  height: 1000px;
+  width: 1000px;
+  flex-direction: column;
+}
+
+.upperbox{
+  display: flex;
+  border: 1px black solid;
+  width: 100%;
+  height: 60%;
+}
+
+.studentbox{
+  display: flex;
+  border: 1px black solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.dogbox{
+  display: flex;
+  border: 1px black solid;
+  flex: 2;
+  flex-direction: column;
+}
+
+.cssbox{
+  display: flex;
+  border: 1px black solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.lowerbox{
+  display: flex;
+  border: 1px black solid;
+  height: 40%;
+}
+
+.boybox{
+  display: flex;
+  border: 1px black solid;
+  flex: 1;
+  flex-direction: column;
+}
+
+.polibox{
+  display: flex;
+  border: 1px black solid;
+  flex: 3;
+  flex-direction: column;
+}
+
+.politics{
+  display: flex;
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 25px;
+  flex: 1;
+}
+.technology{
+  display: flex;
+  background-color: cyan;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 25px;
+  flex: 1;
+}
+.local{
+  display: flex;
+  background-color: green;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 25px;
+  flex: 1;
+}
+.opinion{
+  display: flex;
+  background-color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 25px;
+  flex: 1;
+}
+.sports{
+  display: flex;
+  background-color: purple;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 25px;
+  flex: 1;
+} 
+.boxtitle{
+  font-style: italic;
+  text-align: center;
+}
+

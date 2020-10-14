@@ -1,0 +1,95 @@
+.myheader.extra{
+  color: red;
+  font-weight: normal;
+}
+
+.modify{
+  color: yellow;
+}
+.myheader{
+  color:brown;
+}
+
+.myheader.extra:hover{
+  color:aqua;
+}
+
+.myheader2{
+  color: yellowgreen;
+  font-family: Comic Sans;
+  text-align: right;
+}
+
+.mylist{
+  color: blueviolet;
+  background-color: black;
+  font-family: Gill Sans;
+}
+
+.mylist:first-child{
+  color:beige;
+  background-color: red;
+  font-family: cambria;
+}
+
+.example {
+  border: 3px solid red;
+  padding: 20px;
+  margin: 25px;
+  background-color: white;
+}
+
+.floatbox {
+  display: flex;
+  align-items: center;
+}
+
+.box-1 {
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  height: 150px;
+  width: 300px;
+}
+
+.box-2 {
+  border: 1px solid black;
+  color: white;
+  background-color: red;
+  height: 100px;
+  width: 300px;
+}
+
+.box-3 {
+  border: 1px solid black;
+  color: white;
+  background-color: green;
+  height: 200px;
+  width: 100px;
+}
+
+#myid{
+  color: blue;
+}
+
+.ex-btn {
+  background-color: #eee;
+  border: 2px solid #aaa;
+  padding: 4px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer; /* changes the mouse when you hover the button */
+}
+
+.ex-btn-warn {
+  color: white;
+  background-color: crimson;
+  border-color: darkred;
+}
+
+.ex-btn-success {
+  color: white;
+  background-color: limegreen;
+  border-color: green;
+}

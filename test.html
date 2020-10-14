@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="test.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+<!-- links -->
+<div>
+  <a href="https://www.frontendmasters.com">Frontend Masters</a>
+  <a href="https://aka.ms/visual-studio-code">Visual Studio Code</a>
+  <a href="https://www.codepen.io">CodePen</a>
+</div>
+
+<button class="ex-btn"> MY button </button>
+<button class="ex-btn ex-btn-warn"> WARN BUTTON </button>
+<button class="ex-btn ex-btn-warn ex-btn-success"> SUCCESS BUTTON </button>
+
+<!-- header -->
+<div>
+  <head>
+  <h1 class="myheader extra">This is an h1!</h1>
+  <h2 class="myheader">This is an h2!</h2>
+  <h3 class="myheader2">This is an h3!</h3>
+  <h4>This is an h4!</h4>
+  <h5>This is an h5!</h5>
+  <h6>This is an h6!</h6>
+</div>
+
+<div>
+  <ol>
+    <li class="mylist"> WHAT'S UP? </li>
+    <li class="mylist"> I'M GOOD! </li>
+    <li class="mylist"> THANKS! </li>
+  </ol>
+</div>
+
+<div class="example"> Hello </div>
+
+<div class="floatbox">
+  <div class="box-1 floatbox"></div>
+  <div class="box-2 floatbox"></div>
+  <div class="box-3 floatbox"></div>
+</div>
+
+
+
+
+<!-- text empasis -->
+<div>
+  <strong>This text is strong.</strong>
+  <em>This text is emphasized.</em>
+</div>
+
+<!-- paragraphs -->
+<div>
+  <p class="modify"> <span class="changecolour">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="specific"> Incidunt modi est sapiente in optio quia inventore quis</span>sp maxime ullam tenetur?</span></p>
+  <p>Maxime quibusdam, dolorum quaerat ducimus inventore sunt pariatur et ea dolore ipsam. Distinctio eum nobis officiis quam quasi exercitationem eaque?</p>
+  <p class="modify2">Tempore quaerat odit sit rem nihil eligendi error quisquam, natus deleniti molestias voluptate nobis, amet repellendus. Aliquam deserunt quia impedit.</p>
+  <p>Doloremque expedita earum quidem pariatur amet. Officia ex corporis, repellendus ipsa, cumque quia at voluptas, iste harum dolor debitis labore?</p>
+  <p>Et quisquam sit nemo ipsam aliquid provident, ullam eligendi aspernatur placeat fuga nostrum molestiae ab nobis obcaecati nesciunt cupiditate neque.</p>
+</div>
+
+<!-- images -->
+<div>
+  <img src="http://www.placepuppy.net/1p/100/100" alt="an adorable puppy" />
+  <img src="http://www.placepuppy.net/2p/100/100" alt="an adorable puppy" />
+  <img src="http://www.placepuppy.net/3p/100/100" alt="an adorable puppy" />
+</div>
+
+<!-- inputs -->
+<div>
+  <input /> <!-- with a trailing slash -->
+  <input> <!-- without a trailing slash; it's the same thing -->
+  <input type="color" />
+  <input type="file" />
+  <input type="number" />
+  <input type="datetime-local" />
+  <input type="radio" /> This choice </input>
+  <input type="checkbox" />
+</div>
+
+<!-- textarea -->
+<div>
+  <textarea></textarea>
+</div>
+
+<!-- unordered list-->
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- select -->
+<div>
+  <select>
+    <option value="seattle">Seattle</option>
+    <option value="portland">Portland</option>
+    <option value="san-francisco">San Francisco</option>
+  </select>
+</div>
+
+<!-- buttons -->
+<div>
+  <button>Click me! I don't do anything</button>
+</div>
+
+<!-- table -->
+<table>
+  <tr>
+    <td>(0,0)</td>
+    <td>(1,0)</td>
+  </tr>
+  <tr>
+    <td>(0,1)</td>
+    <td>(1,1)</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+
+// Jquery here!
+$("document").ready(function() {
+  $(".modify").css("color", "green");
+  $(".modify #specific").html("What's up?");
+  $(".modify #specific").css("background-color", "black");
+
+  // Perform multiple queries at once.  
+  $(".modify2").css({"color": "blue",
+  "font-family": "helvetica",
+  "background-color": "yellow"});
+});
+
+// Regular Javascript here!
+const mod = document.querySelector(".changecolour");
+mod.style.backgroundColor = "red";
+
+</script>
+</html>

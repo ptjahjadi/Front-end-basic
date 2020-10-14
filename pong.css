@@ -1,0 +1,36 @@
+/* White game background inside green background */
+.game_background{
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+/* Define the game scoreboard */
+.score_board{
+    background-color: greenyellow;
+    color: green;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+}
+
+/* Red ball for the game */
+.red_ball{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Blue-colored platform to play the game */
+.blue_platform{
+    position: absolute;
+    background-color: blue;
+    width: 70px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 250px;
+}
+

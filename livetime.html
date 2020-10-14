@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .mybox{
+            width:100px;
+            height:100px;
+            background-color: red;
+            display: inline-block;
+        }
+
+    </style>
+    <div id="timer"></div>
+    <div class="mybox"></div>
+    <div class="mybox"></div>
+
+
+    <div>
+        <button id="change"> Click here to change colour! </button>
+    </div>
+    <div id="changetext"></div>
+    <script>
+        function checkTime(){          
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+            document.getElementById("timer").innerHTML = `${h}:${m}:${s}`;
+            setInterval(checkTime, 1000);
+        }
+        checkTime();
+        
+        // The boxes will change colours after pressing the button and waiting 2 seconds!
+        function waitChangeColour(){
+            setTimeout(changeColour, 2000);
+        }
+
+        function changeColour(){
+        // Query Selector All: Use for loop for each
+        redSquare = document.querySelectorAll(".mybox")
+        for (i = 0; i < redSquare.length; i++) {
+            redSquare[i].style.backgroundColor = 'green';
+        }
+        document.querySelector('#changetext').innerHTML =  "The colours have changed after 2 seconds!";
+        }
+        
+        document.querySelector("#change").addEventListener("click", waitChangeColour);
+    </script>
+</html>
